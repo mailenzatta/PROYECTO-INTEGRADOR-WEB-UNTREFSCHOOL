@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+  </head>
+  <body>
+    <header>
+      <div class="menu">
+        <nav>
+          <a href="index.html">Volver al inicio</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="formulario">
+        <h1>Formulario de contacto</h1>
+        <form
+          action=""
+          method="post"
+          autocomplete="on"
+          enctype="multipart/form-data"
+        >
+          <label for="nombre">Nombre:</label>
+          <input
+            type="text"
+            name="nombre"
+            id="nombre"
+            placeholder="Ingrese su nombre completo"
+            minlength="5"
+            maxlength="15"
+          />
+
+          <label for="email">Correo:</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Correo electrónico"
+            required
+          />
+
+          <label for="telefono">Teléfono</label>
+          <input
+            type="tel"
+            name="telefono"
+            id="telefono"
+            placeholder="Ingrese nro de teléfono o celular"
+          />
+
+          <label for="destinatario">Destinatario:</label>
+          <select name="destinatario" id="destinatario">
+            <option value=""></option>
+            <option value="administracion">Administración</option>
+            <option value="docente">Docente</option>
+            <option value="cooperadora">Cooperadora</option>
+          </select>
+
+          <label for="comentario">Comentario:</label>
+          <textarea
+            name="comentario"
+            id="comentario"
+            cols="30"
+            rows="10"
+            placeholder="Ingrese su comentario aquí"
+          ></textarea>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <h3>Untref School</h3>
+    </footer>
+  </body>
+</html>
