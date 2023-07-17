@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Poppins:wght@100;400;700&display=swap");
+
+/* paleta de colores #FC7300 , #1F8A70 , #00425A , #181823, #EFF5F5 */
+
+* {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-family: "Belanosima", sans-serif;
+}
+
+body {
+  background-color: #181823;
+  color: #eff5f5;
+  text-align: center;
+}
+
+.menu {
+  width: 100%;
+  background-color: #00425a;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  border-bottom: #00425a solid 10px;
+  border-top: #00425a solid 10px;
+}
+
+nav a {
+  border: #181823 solid 1px;
+  border-radius: 10px;
+  padding: 0.2em;
+  background-color: #181823;
+  box-shadow: 0px 3px 5px #181823;
+}
+
+a {
+  text-decoration: none;
+  color: #1f8a70;
+}
+
+a:hover {
+  color: #fc7300;
+}
+
+.titulo {
+  background-image: url(/img/niña-pizarron.jpg);
+  max-width: 100%;
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  background-position: center;
+  padding-top: 5em;
+}
+
+.titulo > h1 {
+  padding-top: 2.5em;
+}
+
+h1,
+h3 {
+  color: #fc7300;
+  padding: 1em;
+  text-shadow: #181823 5px 10px 5px;
+}
+
+h2 {
+  color: #1f8a70;
+  padding: 1em;
+}
+
+h4 {
+  font-weight: 100;
+  margin: 0.5em;
+}
+
+img {
+  max-width: 100%;
+}
+
+main {
+  margin: 0.5em;
+}
+
+p {
+  margin: 1em;
+  line-height: 1.5em;
+}
+
+.section-3 > ul {
+  display: flex;
+  gap: 3em;
+  padding: 1em;
+  align-items: baseline;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.section-4 {
+  display: flex;
+  flex-direction: column;
+}
+
+.box {
+  border: solid 1px #00425a;
+  border-radius: 10px;
+  height: 50vh;
+  overflow: auto;
+  padding: 0.5em;
+  text-align: justify;
+  text-indent: 1em;
+  line-height: 1.5em;
+  margin: 1.5em;
+}
+
+.box h3 {
+  text-align: center;
+  padding-bottom: 0;
+}
+
+footer {
+  background-color: #00425a;
+}
+
+.redes-sociales li,
+.contacto li {
+  padding-bottom: 1.5em;
+}
+
+.copy {
+  background-color: #181823;
+  color: #1f8a70;
+  margin: 0;
+  justify-content: center;
+  font-size: small;
+}
+
+@media screen and (min-width: 768px) {
+  nav ul {
+    justify-content: space-evenly;
+  }
+
+  .titulo {
+    background-image: url(/img/niña-pizarron-1920x1280.jpg);
+  }
+
+  main {
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+
+  section {
+    margin-top: 1em;
+  }
+
+  .section-1,
+  .section-2 {
+    display: grid;
+    padding: 0;
+    border: 0;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20% 80%;
+  }
+
+  #quienes-somos,
+  #por-que-elegirnos {
+    grid-column: 1 / 3;
+  }
+
+  .section-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 15% 85%;
+    margin-bottom: 2em;
+  }
+
+  #noticias {
+    grid-column: 1 / 3;
+  }
+
+  .box {
+    padding: 1em;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+  .redes-sociales,
+  .contacto {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    font-size: large;
+  }
+
+  section > p {
+    padding: 5em;
+  }
+}
