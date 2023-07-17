@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Poppins:wght@100;400;700&display=swap");
+
+/* paleta de colores #FC7300 , #1F8A70 , #00425A , #181823, #EFF5F5 */
+
+* {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-family: "Belanosima", sans-serif;
+}
+
+body {
+  background-color: #181823;
+  color: #eff5f5;
+}
+
+header {
+  background-color: #00425a;
+  padding: 0.5em;
+}
+
+a {
+  color: #1f8a70;
+  text-decoration: none;
+  margin-left: 0.75em;
+  border: #181823 solid 1px;
+  border-radius: 10px;
+  padding: 0.2em;
+  background-color: #181823;
+  box-shadow: 0px 3px 5px #181823;
+}
+
+a:hover {
+  color: #fc7300;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 1em;
+}
+
+h1 {
+  color: #fc7300;
+  text-align: center;
+  text-shadow: #181823 5px 10px 5px;
+}
+
+.formulario {
+  max-width: 100%;
+  background: #00425a;
+  width: 80vw;
+  padding: 1em;
+  box-shadow: 0px 0px 5px #1f8a70;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+
+input,
+select,
+textarea {
+  padding: 0.2em;
+  margin: 1em;
+  box-sizing: border-box;
+  border-radius: 8px;
+  border: solid #1f8a70 2px;
+}
+
+button,
+select {
+  cursor: pointer;
+}
+
+button {
+  background-color: #1f8a70;
+  padding: 0.3em;
+  margin: 1em;
+  box-sizing: border-box;
+  border-radius: 8px;
+  border: solid #1f8a70 2px;
+  width: 20vw;
+  font-size: medium;
+  align-self: center;
+}
+
+button:hover {
+  background-color: #fc7300;
+  color: #eff5f5;
+  transition: all 200ms linear;
+}
+
+h3 {
+  background-color: #00425a;
+  text-align: center;
+  color: #fc7300;
+  text-shadow: #181823 5px 10px 5px;
+  padding: 2em;
+}
+
+.copy {
+  background-color: #181823;
+  color: #1f8a70;
+  margin: 0;
+  font-size: small;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  input,
+  select,
+  textarea {
+    font-size: medium;
+  }
+
+  .formulario {
+    width: 50vw;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  form {
+    margin-left: 5em;
+    margin-right: 5em;
+  }
+}
