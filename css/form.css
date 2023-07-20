@@ -5,7 +5,6 @@
 * {
   margin: 0;
   font-family: "Poppins", sans-serif;
-  font-family: "Belanosima", sans-serif;
 }
 
 body {
@@ -19,14 +18,13 @@ header {
 }
 
 a {
-  color: #1f8a70;
   text-decoration: none;
   margin-left: 0.75em;
-  border: #181823 solid 1px;
   border-radius: 10px;
   padding: 0.2em;
-  background-color: #181823;
   box-shadow: 0px 3px 5px #181823;
+  color: #eff5f5;
+  text-shadow: #181823 1px 1px 2px;
 }
 
 a:hover {
@@ -45,6 +43,7 @@ h1 {
   color: #fc7300;
   text-align: center;
   text-shadow: #181823 5px 10px 5px;
+  font-family: "Belanosima", sans-serif;
 }
 
 .formulario {
@@ -100,6 +99,7 @@ h3 {
   color: #fc7300;
   text-shadow: #181823 5px 10px 5px;
   padding: 2em;
+  font-family: "Belanosima", sans-serif;
 }
 
 .copy {
