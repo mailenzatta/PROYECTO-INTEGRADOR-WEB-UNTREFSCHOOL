@@ -17,7 +17,7 @@ header {
   padding: 0.5em;
 }
 
-a {
+.menu a {
   text-decoration: none;
   margin-left: 0.75em;
   border-radius: 10px;
@@ -42,7 +42,7 @@ main {
 h1 {
   color: #fc7300;
   text-align: center;
-  text-shadow: #181823 5px 10px 5px;
+  text-shadow: #181823 1px 10px 5px;
   font-family: "Belanosima", sans-serif;
 }
 
@@ -94,23 +94,53 @@ button:hover {
 }
 
 h3 {
-  background-color: #00425a;
-  text-align: center;
   color: #fc7300;
-  text-shadow: #181823 5px 10px 5px;
-  padding: 2em;
-  font-family: "Belanosima", sans-serif;
+  text-shadow: #181823 1px 2px 1px;
+  padding: 1em;
+}
+
+a {
+  text-decoration: none;
+  color: #1f8a70;
+  text-shadow: #181823 1px 2px 1px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer {
+  background-color: #00425a;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  text-align: center;
+}
+
+.redes-sociales,
+.mapa,
+.contacto {
+  flex-basis: 0;
+  flex-grow: 1;
+}
+
+.redes-sociales li,
+.contacto li {
+  padding-bottom: 1em;
+  text-align: justify;
+  margin-left: 10%;
 }
 
 .copy {
   background-color: #181823;
   color: #1f8a70;
   margin: 0;
-  font-size: small;
   text-align: center;
+  font-size: small;
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   input,
   select,
   textarea {
@@ -120,11 +150,15 @@ h3 {
   .formulario {
     width: 50vw;
   }
+
+  .footer {
+    flex-direction: row;
+  }
 }
 
-@media screen and (min-width: 1200px) {
+@media (min-width: 1024px) {
   form {
-    margin-left: 5em;
-    margin-right: 5em;
+    margin-left: 2em;
+    margin-right: 2em;
   }
 }

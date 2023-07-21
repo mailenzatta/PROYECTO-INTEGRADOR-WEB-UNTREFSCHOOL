@@ -17,6 +17,7 @@ body {
   position: sticky;
   top: 0;
   background-color: #00425a !important;
+  z-index: 1;
 }
 
 #navbarNav a {
@@ -58,12 +59,6 @@ a:hover {
   padding-top: 5em;
 }
 
-#titulo > h1 {
-  letter-spacing: 0.1em;
-  font-weight: bold;
-  font-size: xx-large;
-}
-
 h1,
 h2,
 h3,
@@ -72,6 +67,9 @@ h4 {
 }
 
 h1 {
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  font-size: xx-large;
   color: #fc7300;
   padding: 1em;
   text-shadow: #181823 1px 10px 5px;
@@ -91,9 +89,9 @@ h3 {
 }
 
 h4 {
-  font-weight: 100;
-  margin: 0.5em;
+  margin-top: 0.5em;
   font-family: "Belanosima", sans-serif;
+  font-size: 1em;
 }
 
 img {
@@ -127,18 +125,26 @@ ul {
   box-shadow: 0px 0px 5px 5px #00425a;
 }
 
-.section-3 > ul {
-  display: flex;
-  gap: 3em;
+.section-3 ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1em;
   padding: 1em;
-  align-items: baseline;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  padding-top: 3em;
 }
 
-.section-3 > ul > li > img:hover {
-  transform: scale(110%);
+.img-propuesta {
+  width: 40vw;
+  border-radius: 10%;
+  box-shadow: 0px 0px 5px 2px #00425a;
+}
+
+.img-propuesta:hover {
+  scale: 1.2;
+  margin-top: -1em;
+  margin-bottom: 1em;
+  border-radius: 2%;
+  transition: 1s;
 }
 
 .section-4 {
@@ -160,14 +166,29 @@ ul {
   padding-bottom: 0;
 }
 
-footer {
+.box img {
+  padding: 1em;
+}
+
+.footer {
   background-color: #00425a;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.redes-sociales,
+.mapa,
+.contacto {
+  flex-basis: 0;
+  flex-grow: 1;
 }
 
 .redes-sociales li,
-.contacto li,
-.mapa {
-  padding-bottom: 1.5em;
+.contacto li {
+  padding-bottom: 1em;
+  text-align: justify;
+  margin-left: 6em;
 }
 
 .copy {
@@ -178,7 +199,7 @@ footer {
   font-size: small;
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   #titulo {
     background-image: url(../img/niña-pizarron-1920x1280.jpg);
     height: 60vh;
@@ -230,6 +251,18 @@ footer {
     padding-bottom: 1.5em;
   }
 
+  .section-3 ul {
+    gap: 2em;
+  }
+
+  h4 {
+    font-size: 1.3em;
+  }
+
+  .img-propuesta {
+    width: 25vw;
+  }
+
   .section-4 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -248,19 +281,16 @@ footer {
   }
 
   .footer {
-    display: flex;
-    justify-content: space-around;
-    padding-left: 2em;
-    padding-right: 2em;
+    flex-direction: row;
   }
 
-  .redes-sociales,
-  .contacto {
-    flex-direction: row;
+  .redes-sociales li,
+  .contacto li {
+    margin-left: 4em;
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media (min-width: 1024px) {
   body {
     font-size: large;
   }
@@ -272,5 +302,10 @@ footer {
   #titulo > h1 {
     font-size: 5em;
     padding-top: 0.5em;
+  }
+
+  .redes-sociales li,
+  .contacto li {
+    margin-left: 6em;
   }
 }
