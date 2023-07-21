@@ -129,6 +129,7 @@ ul {
   flex-direction: column;
   gap: 0.5em;
   text-align: center;
+  padding-bottom: 1em;
 }
 
 .redes-sociales,
@@ -141,8 +142,6 @@ ul {
 .redes-sociales li,
 .contacto li {
   padding-bottom: 1em;
-  text-align: justify;
-  margin-left: 6em;
 }
 
 .copy {
@@ -167,21 +166,11 @@ ul {
   .footer {
     flex-direction: row;
   }
-
-  .redes-sociales li,
-  .contacto li {
-    margin-left: 4em;
-  }
 }
 
 @media (min-width: 1024px) {
   form {
     margin-left: 2em;
     margin-right: 2em;
-  }
-
-  .redes-sociales li,
-  .contacto li {
-    margin-left: 6em;
   }
 }

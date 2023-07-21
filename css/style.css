@@ -57,7 +57,41 @@ a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding-top: 5em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#titulo::before {
+  content: "";
+  position: absolute;
+}
+
+h1 {
+  position: relative;
+}
+
+#titulo > h1::after {
+  content: "";
+  height: 2px;
+  width: 0%;
+  background-color: #eff5f5;
+  display: block;
+  transition: 1s ease-in-out;
+}
+
+#titulo > h1:hover::after {
+  content: "";
+  height: 5px;
+  width: 100%;
+  background-color: #fc7300;
+  display: block;
+  margin-top: 0.5em;
 }
 
 h1,
@@ -186,6 +220,7 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 0.5em;
+  padding-bottom: 1em;
 }
 
 .redes-sociales,
@@ -198,8 +233,6 @@ ul {
 .redes-sociales li,
 .contacto li {
   padding-bottom: 1em;
-  text-align: justify;
-  margin-left: 6em;
 }
 
 .copy {
@@ -218,23 +251,6 @@ ul {
 
   #titulo > h1 {
     font-size: 3em;
-  }
-
-  #titulo > h1::after {
-    content: "";
-    height: 2px;
-    width: 0%;
-    background-color: #eff5f5;
-    display: block;
-    transition: 1s ease-in-out;
-  }
-
-  #titulo > h1:hover::after {
-    content: "";
-    height: 10px;
-    width: 100%;
-    background-color: #fc7300;
-    display: block;
   }
 
   main {
@@ -294,11 +310,6 @@ ul {
   .footer {
     flex-direction: row;
   }
-
-  .redes-sociales li,
-  .contacto li {
-    margin-left: 4em;
-  }
 }
 
 @media (min-width: 1024px) {
@@ -308,15 +319,5 @@ ul {
 
   #navbarNav a {
     font-size: medium;
-  }
-
-  #titulo > h1 {
-    font-size: 5em;
-    padding-top: 0.5em;
-  }
-
-  .redes-sociales li,
-  .contacto li {
-    margin-left: 6em;
   }
 }
