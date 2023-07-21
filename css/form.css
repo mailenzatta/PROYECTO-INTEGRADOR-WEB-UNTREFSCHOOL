@@ -5,6 +5,7 @@
 * {
   margin: 0;
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -17,7 +18,19 @@ header {
   padding: 0.5em;
 }
 
-.menu a {
+.logo-untref {
+  text-shadow: #181823 1px 1px 5px;
+  font-weight: bold;
+  color: #1f8a70;
+  text-decoration: overline;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a {
   text-decoration: none;
   margin-left: 0.75em;
   border-radius: 10px;
